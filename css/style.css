@@ -44,14 +44,14 @@ h1 {
 h2 {
     font-size: 80px;
     line-height: 70px;
-    color:deeppink;
+    color:rgb(255, 20, 102);
 }
 
 
 h3 {
     letter-spacing: 2px;
     position: relative;
-    color:mediumpurple;
+    color:aqua;
     font-weight: 700;
 }
 
@@ -59,7 +59,7 @@ h5 {
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
-    color:mediumpurple;
+    color:#a2eae0;
     margin-left: 40px;
     font-weight: 700;
     text-align: right;
@@ -87,33 +87,31 @@ h4:before {
     background:aqua;
     top: 9px;
 }
-.h-white{
-    color: white;
+
+.h-sub{
+    position: relative;
+    color:aqua;
+    font-size: 21px;
+    font-weight: bold;
 }
 
-.h-mediumpurple{
-    color:mediumpurple;
+.tarjeta{
+    color:darkcyan;
 }
-
-
 /* General 
 ==================================================*/
 
 body {
 
-    background-color: #162944;
-    opacity: 1;
-    background-image:  radial-gradient(#a095ae 1.35px, transparent 1.35px), radial-gradient(#a095ae 1.35px, #162944 1.35px);
-    background-size: 54px 54px;
-    background-position: 0 0,27px 27px;
-    font-family: 'Lato', sans-serif;
+    background-color:#0f2147;
+    font-family: "Lucida Console", monospace;
     color:white;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
-
+   
 }
 .frame-section{
-    background: #162944;
+    background:#0f2547;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -197,7 +195,7 @@ body {
     width: 100%;
     -webkit-animation: rotation 1s linear infinite;
     animation: rotation 1s linear infinite;
-    border: 2px solid deeppink;
+    border: 2px solid #F6386D;
     border-top: 2px solid transparent;
     border-radius: 100%
 }
@@ -307,7 +305,7 @@ nav ul {
     display: inline-block;
     padding-left: 0;
     list-style: none;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -321,7 +319,7 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color:deeppink;
+    color:#F6386D;
     font-size: 11px;
     font-weight: bold;
     text-decoration: none;
@@ -343,7 +341,7 @@ a:focus {
 }
 
 a:hover {
-    color:blueviolet;
+    color:#1e8cb0;
     text-decoration: none;
 }
 
@@ -364,6 +362,7 @@ a.active {
 .table-cell {
     display: table-cell;
     vertical-align: middle;
+    text-align: left;
 }
 
 .disply-table {
@@ -381,9 +380,11 @@ a.active {
 }
 
 .about-img-div img {
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color:lightpink;
+    border: 1px solid darkcyan;
+    border-radius: 1px;
+    padding: 1px 45px;
+    /* display: inline-block; */
+    background-color: #284163;
 }
 
 
@@ -392,7 +393,7 @@ a.active {
 ==================================================*/
 
 #experience {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .experience-row {
@@ -404,19 +405,19 @@ a.active {
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
-    color:deeppink;
+    color:#F6386D;
     font-size: 16px;
     font-weight: bold
 }
 
 .experience-row p {
-    color: #888;
+    color:black;
     margin-top: 20px;
     font-size: 15px;
 }
 
 .experience-row .date {
-    color: #000;
+    color:black;
     font-size: 17px;
 }
 
@@ -427,7 +428,7 @@ a.active {
 }
 
 .timeline:before {
-    background-color: black;
+    background-color:gray;
     content: '';
     margin-left: -1px;
     position: absolute;
@@ -444,11 +445,11 @@ a.active {
 .timeline-event:hover .timeline-event-icon {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color:deeppink;
+    background-color:#F6386D;
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 deeppink;
+    box-shadow: inset 40em 0 0 0 #F6386D;
 }
 
 .timeline-event-copy {
@@ -483,8 +484,8 @@ a.active {
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color:deeppink;
-    outline: 10px solid #f3f3f3;
+    background-color:#F6386D;
+    outline: 10px solid #0f2547;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
     position: absolute;
@@ -504,8 +505,11 @@ a.active {
     color: white;
     font-size: 12px;
     font-weight: bold;
-    background-color: black;
-    box-shadow: inset 0 0 0 0em deeppink;
+
+    border: 2px solid #F6386D;
+    border-radius: 1px;
+
+    box-shadow: inset 0 0 0 0em #F6386D;
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
@@ -517,6 +521,10 @@ a.active {
 
 #projects {
     padding: 50px 0;
+}
+.portfolio{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .portfolio .categories-grid span {
@@ -545,7 +553,7 @@ a.active {
 }
 
 .portfolio .categories-grid .categories ul li a.active {
-    background-color: deeppink;
+    background-color: #F6386D;
     padding: 0px 20px;
     color: white;
     text-decoration: none;
@@ -568,7 +576,7 @@ a.active {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: deeppink;
+    background-color: #F6386D;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
@@ -603,7 +611,7 @@ a.active {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: deeppink;
+    background-color: #F6386D;
     padding: 5px 20px;
     color: #fff;
     margin-top: 10px;
@@ -753,11 +761,11 @@ fieldset {
 }
 
 #success p {
-    color: deeppink;
+    color: #F6386D;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    border: 2px solid deeppink;
+    border: 2px solid #F6386D;
     margin-top: 10px;
 }
 
@@ -783,28 +791,18 @@ fieldset {
 
 
 .caja {
-    background-color:white;
-    padding: 35px 75px;
-    color: #162944;
+    background-color: #284163;
+    padding: 30px 70px;
+    color:white;
     text-align: center;
+    border: 2px solid darkcyan;
+    border-radius: 1px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.social {
-    padding-left: 0;
-    list-style: none;
-}
 
 
-.social li a {
-    color: #333;
-    font-size: 35px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-}
-
-.social li a:hover {
-    color: deeppink;
-}
 
 .miicono{
     font-size: 35px;
@@ -813,31 +811,49 @@ fieldset {
 .miicono:hover {
     color: #000;
 }
-
 /* ---------------------------
 --------------------------- */
-.social2 {
+
+.social-bottom {
     padding-left: 0;
     list-style: none;
-    margin-left: 5px;
 }
 
-.social2  li {
-    float: left;
-}
-
-
-.social2 li a {
+.social-bottom li a {
     color:#fff;
-    font-size: 45px;
-    margin-right: 15px;
+    font-size: 35px;
     transition: all .3s;
     -webkit-transition: all .3s;
 }
 
-.social2 li a:hover {
-    color: deeppink;
+.social-bottom li a:hover {
+    color: #F6386D;
+} 
+
+
+/* ---------------------------
+--------------------------- */
+.social-top{
+    padding-left: 0;
+    list-style: none;
+    margin-left: 20px;
 }
+.social-top li {
+    float: left;
+}
+.social-top li a {
+    color:#fff;
+    font-size: 36px;
+    margin-right: 22px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    margin-left: 5px;
+}
+
+.social-top li a:hover {
+    color: #F6386D;
+}
+
 
 
 /* Responsive media queries
@@ -888,21 +904,22 @@ fieldset {
 ==================================================*/
 
 .misetiquetas {
-    padding: 10px;
-    font-size: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
 }
 
 
 .button_slide {
     color: #FFF;
-    border: 2px solid deeppink;
+    border: 2px solid #F6386D;
     border-radius: 1px;
-    padding: 10px 25px;
+    padding: 10px 45px;
     display: inline-block;
     font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 deeppink;
+    box-shadow: inset 0 0 0 0 #F6386D;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
@@ -910,7 +927,7 @@ fieldset {
   }
 
   .slide_right:hover {
-    box-shadow: inset 400px 0 0 0 deeppink;
+    box-shadow: inset 400px 0 0 0 #F6386D;
   }
 
 
@@ -923,3 +940,7 @@ fieldset {
     filter: invert(100%);
     opacity: 1;
 }
+.card {
+    border-bottom-width:  10px;
+    border-color: #162944;
+  }

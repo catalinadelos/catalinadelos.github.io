@@ -106,3 +106,19 @@ $(document).ready(function () {
     //animatedModal
     $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const texto = "Java Trainee";
+    const velocidad = 200; // Velocidad de escritura en milisegundos
+    let indice = 0;
+
+    function escribirTexto() {
+        if (indice < texto.length) {
+            document.getElementById("typewriter").innerHTML += texto.charAt(indice);
+            indice++;
+            setTimeout(escribirTexto, velocidad);
+        }
+    }
+
+    escribirTexto();
+});
