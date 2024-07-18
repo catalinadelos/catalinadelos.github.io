@@ -109,7 +109,7 @@ $(document).ready(function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     const texto = "Java Trainee";
-    const velocidad = 250; // Velocidad de escritura en milisegundos
+    const velocidad = 220; // Velocidad de escritura en milisegundos
     let indice = 0;
 
     function escribirTexto() {
